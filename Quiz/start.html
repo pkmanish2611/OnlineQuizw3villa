@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online quiz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,600&display=swap');
+    </style>
+    <!--linking style.css file here-->
+    <link rel ="stylesheet" href = "dist/css/style.css">
+</head>
+<body>
+    <div class = "wrapper">
+        <div class="div welcome_text">
+            <!--we have taken a form to take user name input-->
+            <form class= "welcome_form" name="welcome" onsubmit="submitForm(event)"> 
+                <h1>Welcome to Quiz app</h1> 
+                <input type="text"  name="name" placeholder="name"></input>
+                <div class="div button_grp"> 
+                    <button type = "submit"> Easy </button>
+                    <button type="submit"> Moderate </button>
+                    <button type="submit"> Hard </button>
+                </div>
+                <p>click on your level to start quiz</p>
+                
+            </form>
+        </div>
+    </div>
+
+    <!-- linking quiz.js here-->
+    <script src= "js/quiz.js"></script>
+</body>
+</html>

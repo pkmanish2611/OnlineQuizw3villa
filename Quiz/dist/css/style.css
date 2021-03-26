@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* css for start page*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color:aqua;
+
+}
+.welcome_form h1,
+.welcome_form p{
+    text-align: center;
+}
+
+.button_grp{
+     margin-top: 30px;
+} 
+
+.welcome_form input{
+     
+    margin-top: 15px;
+    background-color:transparent;
+    border : none;
+    border-bottom:4px solid navy;
+    color:indigo;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+
+.button_grp button{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 120px;
+    height: 30px;
+    left: 347px;
+    top: 19px;
+    float: right;
+
+    border: 2px solid #FFFCFC;
+    box-sizing: border-box;
+    border-radius: 40px;
+    transition: 0,4s all;
+}
+.button_grp button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.welcome_form button:focus,
+.welcome_form input:focus{
+    outline: none;
+}
+
+/* css for quiz page*/
+.quiz{
+    display: grid;
+    grid-template-rows: 60px auto;
+    border-radius: 5px;
+    width: 800px;
+    height: 500px;
+    background-color:#FFFCFC
+}
+
+.quiz_header{
+    display:flex;
+    justify-content: space-between;
+    background-color: darkcyan;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow:0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+
+}
+.quiz_body{
+    background-color:rgb(148, 148, 66);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding : 30px;
+}
+.quiz_user{
+    display :flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.quiz_time{
+    display:flex;
+    align-items:center;
+    padding : 0 30px;
+    background-color: #fff;
+
+}
+.option_group{
+    list-style-type: none;
+    margin: 30px 0;
+}
+.option{
+     border: 2px solid transparent; 
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: ivory;
+    width: 300px;
+    margin: 5px;
+    padding: 15px 20px 
+    
+}
+.option:hover{
+    cursor: pointer;
+    border: 2px solid #5425c0;
+}
+.btn_next{
+     
+    background-color:#5425c0;
+    color:white;
+    border: none;
+    border-radius: 40px;
+    transition: 0,4s all;
+    padding: 15px 35px;
+    
+}
+.btn_next:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+     color:#5425c0;
+     background-color:white;
+}
+.active{
+   background:#5425c0;
+   color: #fff; 
+}
+/* css for end page*/
+.end_body{
+    background-color: burlywood;
+    border-radius: 40px;
+    width: 800px;
+    height: 400px;
+}
+
+ 
+.user_name,
+.user_points,
+.user_time,
+.user_level,
+.thank{
+    font-size: 25px; 
+    color:#fff;
+    text-align: center;
+    margin: 15px;
+} 
+ 
+

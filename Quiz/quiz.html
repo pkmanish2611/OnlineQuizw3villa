@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online quiz</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="quiz">
+           <!--  we have  use css grid here-->
+            <div class="quiz_header">
+                <div class = "quiz_user">
+                    <!--taking name and displaying above quiz question-->
+                    <h4>Welcome! <span class="name"></span></h4>
+                </div>
+                <div class="quiz_time">
+                    <span class = "time"></span>
+                </div>
+            </div>
+            <div class="quiz_body">
+                <!---quiz landing page body-->
+                <div id="questions">
+                    <!-- <h2>Q1. What is the full form of RAM ?</h2>
+                    <ul class="option_group">
+                        <li class="option">option 1</li>
+                        <li class="option">option 2</li>
+                        <li class="option">option 3</li>
+                        <li class="option">option 4</li>
+                    </ul> -->
+                </div>
+                <button class = "btn_next" onclick="next()">Next question</button>
+            </div>
+        </div>
+        
+    </div>
+<!-- linking quiz.js here-->
+<script src="js/quiz.js"></script>
+<!-- linking user_info.js here-->
+<script src = "js/user_info.js"></script>
+<!--timer-->
+<script src = "js/timer.js"></script>
+</body>
+</html>
